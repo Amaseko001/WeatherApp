@@ -1,0 +1,68 @@
+body {
+  background-image: url(https://ravenhall.co.uk/wp-content/uploads/2022/03/3a0522ec11c06775eceb968a52fa64eb9954846e.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  color: black;
+}
+h2 {
+  text-align: center;
+  border: 150px;
+  border-radius: 200px;
+  background-color: grey;
+  color: #6f2bf3;
+  padding: 20px;
+  margin: 100px 10px, 100px, 10px;
+}
+
+h3,
+h4 {
+  font-size: 15px;
+  margin: 20px;
+  text-align: right;
+}
+.search {
+  display: block;
+  margin: auto;
+}
+
+.current-temperature {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: indigo;
+}
+button {
+  color: crimson;
+  border-radius: 20px;
+  border-color: red;
+  box-shadow: 10px 5px 5px black;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.btn-group {
+  display: block;
+  margin: auto;
+  padding: 80px;
+  text-align: center;
+  margin: 50px;
+}
+.dot {
+  height: 28px;
+  width: 28px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.end-note {
+  color: yellow;
+  text-align: right;
+}
+.quote {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
