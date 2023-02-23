@@ -34,6 +34,7 @@ function showWeather(response) {
 }
 
 function displayWeatherCondition(response) {
+  console.log(response.data);
   console.log(response.data.name);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -41,10 +42,28 @@ function displayWeatherCondition(response) {
   );
 }
 
-function search(event) {
-  event.preventDefault();
-  let apiKey = "9cb245c8974a9aa2bee9c6e33954b52a";
-  let city = document.querySelector("#form-control").value;
-  let apiUrl = `https://samples.openweathermap.org/data/2.5/weather?q=${city}appid=${apiKey}&units=metric`;
+function searchCity(city) {
+  let apiKey = "f5e814a04eddfab1740f07bf0328eee2";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
 }
-axios.get(`apiUrl`).then(`displayWeatherCondition`);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-input").value;
+  console.log(city);
+  searchCity(city);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(getCurrentLocation);
+}
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", handleSubmit);
+
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
+
+searchCity("Johannesburg");

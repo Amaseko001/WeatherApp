@@ -11,22 +11,31 @@
     <link rel="stylesheet" href="styleApp.css">
   </head>
   <body>
- 
+<img src="Weather.jpg" alt="image">
     <h1>Weather App☔</h1>
-    <input type ="text" placeholder="Search for location..." id="form-control" autofocus /> 
-    <input type="submit" value="Search" class="btn btn-success" />
-
+    <form id="search-form">
+    <input id="search-input" type ="text" placeholder="Search for location..." class="form-control" autofocus /> 
+    <input
+    type="submit"
+    value="Search"
+    class="form-control btn btn-primary shadow-sm w-100"
+  />
+    </form>
     <div class="current-temperature">
       <p >
         <span id ="city">
-          Cape Town 
+          Cape Town
         </span>
-        <div id ="temperature"> 
-          <strong>⛅ 25°C | °F <div/>
-            <div >Partly cloudy</strong>
-            </div >Precipitation: 0% 
-            <div>Humidity: 24% </div>Wind: 15 km/h</p> 
-  <button class = "currentLocation">Location</button></div>
+      
+            <ul> 
+            <li id ="temperature"> 
+            ⛅ 25°C | °F </li>
+            <li id ="description">Partly cloudy </li>
+            <li >Precipitation: <span id = "precipitation">0</span>% </li>
+            <li>Humidity: <span id = "humidity">24</span> % </li>
+          <li>Wind: <span id = "wind">15</span> km/h</li> 
+        </ul>
+  <button class = "currentLocation" id =  "current-location-button">Current</button></div>
   <p class="quote">"The sun is out, the skies are blue, and the temperature is set to perfect. It's a good day!😊 " </p>
   <h3>Johannesburg, 1911📍 <div id = "time-stamp">Friday, 18:00pm 🕚 </div> </h3>
   <h4><em>Saved location:</em><div>Vanderbjilpark, 1885🏠 </div>South Africa</h4>

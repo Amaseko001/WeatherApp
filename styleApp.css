@@ -1,5 +1,4 @@
 body {
-  background-image: url(https://ravenhall.co.uk/wp-content/uploads/2022/03/3a0522ec11c06775eceb968a52fa64eb9954846e.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -65,7 +64,4 @@ button:hover {
   color: black;
   font-weight: bold;
   text-align: center;
-}
-h6 {
-  color: chartreuse;
 }
