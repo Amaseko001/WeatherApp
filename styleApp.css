@@ -1,6 +1,7 @@
 body {
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(Weather.jpg);
 }
 h1 {
   text-align: center;
