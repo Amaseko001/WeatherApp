@@ -1,6 +1,9 @@
-.weather-app {
+.weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+}
+
+.weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
@@ -84,12 +87,17 @@ button:hover {
   border-radius: 50%;
   display: inline-block;
 }
+
 .end-note {
   color: yellow;
   text-align: right;
 }
 .quote {
-  color: black;
+  color: rgb(233, 22, 152);
   font-weight: bold;
   text-align: center;
+}
+#temperature {
+  text-align: right;
+  font-size: x-large;
 }
