@@ -1,11 +1,38 @@
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+
 body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(Weather.jpg);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 h1 {
   text-align: center;
   color: black;
+  line-height: 28px;
+}
+.form-control {
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  color: rgb(12, 7, 7);
+  display: block;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 100px;
 }
 h2 {
   text-align: center;
@@ -29,9 +56,9 @@ h4 {
 }
 
 .current-temperature {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: indigo;
+  color: rgb(130, 74, 0);
 }
+
 button {
   color: crimson;
   border-radius: 20px;
