@@ -56,9 +56,8 @@ function searchCity(city) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let city = document.querySelector("#search-input").value;
-  console.log(city);
-  searchCity(city);
+  let searchInputElement = document.querySelector("#search-input");
+  search(searchInputElement.value);
 }
 
 function getCurrentLocation(event) {
@@ -66,10 +65,10 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(getCurrentLocation);
 }
 
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", handleSubmit);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Johannesburg");
+searchCity("Cape Town");
