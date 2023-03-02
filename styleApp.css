@@ -98,13 +98,16 @@ button:hover {
   text-align: center;
 }
 #temperature {
-  text-align: right;
-  font-size: x-large;
+  text-align: left;
+  font-size: 40px;
+  color: black;
+}
+.degrees-indicators {
+  color: rgb(56, 55, 55);
 }
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: ;
 }
 .weather-forecast-date {
   font-size: 16px;
