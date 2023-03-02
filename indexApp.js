@@ -19,6 +19,50 @@ if (minutes < 10) {
 
 h3.innerHTML = `${day} ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class ="row"> `;
+  forecastHTML =
+    forecastHTML +
+    `
+   <div class="col-2">
+              <div class="weather-forecast-date">Monday</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="clear"
+                id="icon"
+                class="float left"
+                width="36"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max">24° </span>
+                <span class="weather-forecast-temperature-min">8°</span>
+              </div>
+            </div>
+ `;
+  forecastHTML =
+    forecastHTML +
+    `
+   <div class="col-2">
+              <div class="weather-forecast-date">Monday</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="clear"
+                id="icon"
+                class="float left"
+                width="36"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max">24° </span>
+                <span class="weather-forecast-temperature-min">8°</span>
+              </div>
+            </div>
+ `;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -72,3 +116,4 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Cape Town");
+displayForecast();
