@@ -24,13 +24,13 @@ function displayForecast() {
 
   let forecastHTML = `<div class ="row"> `;
   let days = [
-    "Thursday",
-    "Friday",
-    "Saturday",
     "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
   ];
   days.forEach(function (day) {
     forecastHTML =
